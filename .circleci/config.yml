@@ -1,7 +1,8 @@
 version: 2.1
+
 jobs:
   build_and_push:
-    Docker Class Exercise6docker:
+    docker:
       - image: cimg/python:3.8
     steps:
       - checkout
@@ -28,3 +29,4 @@ workflows:
           filters:
             branches:
               only: main
+
